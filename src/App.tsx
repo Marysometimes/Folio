@@ -8,9 +8,12 @@ import { Case3 } from "./pages/Case3";
 import { Case4 } from "./pages/Case4";
 import { About } from "./pages/About";
 
+// Vite sætter BASE_URL til "/" lokalt og "/Folio/" på GitHub Pages
+const basename = import.meta.env.BASE_URL;
+
 export default function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="flex flex-col min-h-screen">
         <Navigation />
         <main className="flex-1">
