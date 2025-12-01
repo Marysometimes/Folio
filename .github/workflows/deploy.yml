@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # ⭐ VIGTIGT: matcher din outDir: 'build' i vite.config.ts
-          path: build
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest
